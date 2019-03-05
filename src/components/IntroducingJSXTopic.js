@@ -1,12 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import JSXEmbedding from './JSXEmbedding'
+import JSXExpression from './JSXExpression'
+
 function IntroducingJSXTopic({ match }) {
-  return (
-    <div>
-      <h2>{match.params.topicId}</h2>
-    </div>
-  )
+  if (match.params.topicId === 'embedding') {
+    return <JSXEmbedding />
+  } else if (match.params.topicId === 'expression') {
+    return <JSXExpression />
+  }
 }
 
 export default IntroducingJSXTopic
