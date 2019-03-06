@@ -5,6 +5,7 @@ import IntroducingJSXTopic from './IntroducingJSXTopic'
 function IntroducingJSXTopics({ match }) {
   return (
     <div>
+      <hr />
       <ul>
         <li>
           <Link to={`${match.url}/embedding`}>Embedding Expressions in JSX</Link>
