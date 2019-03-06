@@ -13,6 +13,12 @@ function IntroducingJSXTopics({ match }) {
         <li>
           <Link to={`${match.url}/expression`}>JSX is an Expression Too</Link>
         </li>
+        <li>
+          <Link to={`${match.url}/attributes`}>JSX Attributes</Link>
+        </li>
+        <li>
+          <Link to={`${match.url}/jsx-represents-objects`}>JSX Represents Objects</Link>
+        </li>
       </ul>
 
       <Route path={`${match.path}/:topicId`} component={IntroducingJSXTopic} />
